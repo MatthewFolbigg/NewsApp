@@ -13,6 +13,16 @@
 		1F1C74C926FA290E005D18F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C74B426FA290D005D18F1 /* ContentView.swift */; };
 		1F1C74CA26FA290E005D18F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1C74B526FA290E005D18F1 /* Assets.xcassets */; };
 		1F1C74CB26FA290E005D18F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1C74B526FA290E005D18F1 /* Assets.xcassets */; };
+		1F1C74D526FA29CD005D18F1 /* GuardianResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C74D426FA29CD005D18F1 /* GuardianResponse.swift */; };
+		1F1C74D626FA29CD005D18F1 /* GuardianResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C74D426FA29CD005D18F1 /* GuardianResponse.swift */; };
+		1FF0E40A26FA2C2B00F41FC2 /* GuardianServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40926FA2C2B00F41FC2 /* GuardianServices.swift */; };
+		1FF0E40B26FA2C2B00F41FC2 /* GuardianServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40926FA2C2B00F41FC2 /* GuardianServices.swift */; };
+		1FF0E40D26FA2E3900F41FC2 /* GuardianConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40C26FA2E3900F41FC2 /* GuardianConstants.swift */; };
+		1FF0E40E26FA2E3900F41FC2 /* GuardianConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40C26FA2E3900F41FC2 /* GuardianConstants.swift */; };
+		1FF0E41026FA372400F41FC2 /* NewsArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40F26FA372400F41FC2 /* NewsArticles.swift */; };
+		1FF0E41126FA372400F41FC2 /* NewsArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E40F26FA372400F41FC2 /* NewsArticles.swift */; };
+		1FF0E41326FB5C4100F41FC2 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E41226FB5C4100F41FC2 /* ArticleRowView.swift */; };
+		1FF0E41426FB5C4100F41FC2 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0E41226FB5C4100F41FC2 /* ArticleRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,11 @@
 		1F1C74C226FA290E005D18F1 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1C74C426FA290E005D18F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F1C74C526FA290E005D18F1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1F1C74D426FA29CD005D18F1 /* GuardianResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianResponse.swift; sourceTree = "<group>"; };
+		1FF0E40926FA2C2B00F41FC2 /* GuardianServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianServices.swift; sourceTree = "<group>"; };
+		1FF0E40C26FA2E3900F41FC2 /* GuardianConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianConstants.swift; sourceTree = "<group>"; };
+		1FF0E40F26FA372400F41FC2 /* NewsArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticles.swift; sourceTree = "<group>"; };
+		1FF0E41226FB5C4100F41FC2 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,9 @@
 			children = (
 				1F1C74B326FA290D005D18F1 /* NewsAppApp.swift */,
 				1F1C74B426FA290D005D18F1 /* ContentView.swift */,
+				1FF0E41226FB5C4100F41FC2 /* ArticleRowView.swift */,
+				1FF0E40F26FA372400F41FC2 /* NewsArticles.swift */,
+				1FF0E40826FA2AEC00F41FC2 /* GuardianService */,
 				1F1C74B526FA290E005D18F1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +106,16 @@
 				1F1C74C526FA290E005D18F1 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		1FF0E40826FA2AEC00F41FC2 /* GuardianService */ = {
+			isa = PBXGroup;
+			children = (
+				1F1C74D426FA29CD005D18F1 /* GuardianResponse.swift */,
+				1FF0E40926FA2C2B00F41FC2 /* GuardianServices.swift */,
+				1FF0E40C26FA2E3900F41FC2 /* GuardianConstants.swift */,
+			);
+			path = GuardianService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					1F1C74B926FA290E005D18F1 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -187,8 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF0E40D26FA2E3900F41FC2 /* GuardianConstants.swift in Sources */,
+				1FF0E41326FB5C4100F41FC2 /* ArticleRowView.swift in Sources */,
+				1FF0E41026FA372400F41FC2 /* NewsArticles.swift in Sources */,
+				1FF0E40A26FA2C2B00F41FC2 /* GuardianServices.swift in Sources */,
 				1F1C74C826FA290E005D18F1 /* ContentView.swift in Sources */,
 				1F1C74C626FA290E005D18F1 /* NewsAppApp.swift in Sources */,
+				1F1C74D526FA29CD005D18F1 /* GuardianResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF0E40E26FA2E3900F41FC2 /* GuardianConstants.swift in Sources */,
+				1FF0E41426FB5C4100F41FC2 /* ArticleRowView.swift in Sources */,
+				1FF0E41126FA372400F41FC2 /* NewsArticles.swift in Sources */,
+				1FF0E40B26FA2C2B00F41FC2 /* GuardianServices.swift in Sources */,
 				1F1C74C926FA290E005D18F1 /* ContentView.swift in Sources */,
 				1F1C74C726FA290E005D18F1 /* NewsAppApp.swift in Sources */,
+				1F1C74D626FA29CD005D18F1 /* GuardianResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +362,7 @@
 				DEVELOPMENT_TEAM = MVA5U2HB2L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +384,7 @@
 				DEVELOPMENT_TEAM = MVA5U2HB2L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MVA5U2HB2L;
@@ -390,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MVA5U2HB2L;
