@@ -46,13 +46,7 @@ class NewsArticles: NewsArticlesViewModel, ObservableObject {
         }
     }
     
-    func compactDate(for article: GuardianArticle) -> String {
-        let ISOFormatter = ISO8601DateFormatter()
-        let date = ISOFormatter.date(from: article.webPublicationDate)
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        return formatter.string(from: date!)
-    }
+    
     
     
     
