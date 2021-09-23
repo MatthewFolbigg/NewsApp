@@ -46,7 +46,7 @@ struct ArticleTagBar: View {
                 .font(.caption)
                 .tagStyle()
             if article.additional?.starRating != nil {
-                Text("\(Image(systemName: "star.fill"))\(article.additional?.starRating ?? "-")")
+                Text("\(Image(systemName: "star.fill")) \(article.additional?.starRating ?? "-")")
                     .font(.caption)
                     .tagStyle()
             }

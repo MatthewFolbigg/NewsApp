@@ -22,7 +22,7 @@ struct ContentView: View {
                     ProgressView()
                 } else {
                     List() {
-                        ForEach(vm.articles) { article in
+                        ForEach(vm.articles, id: \.self.id) { article in
                             ArticleRowView(article: article, vm: vm)
                         }
                         .listRowBackground(EmptyView())
