@@ -14,12 +14,13 @@ struct GuardianArticle: Codable, Identifiable {
     let sectionName: String
     let publicationDate: String
     let title: String
-    let webURL: String
-    let apiURL: String
+    let webURLString: String
+    let apiURLString: String
     let isHosted: Bool
     let pillarID: String
     let pillarName: String
     let additional: Additional?
+    var url: URL? { URL(string: self.webURLString) }
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -28,8 +29,8 @@ struct GuardianArticle: Codable, Identifiable {
         case sectionName
         case publicationDate = "webPublicationDate"
         case title = "webTitle"
-        case webURL = "webUrl"
-        case apiURL = "apiUrl"
+        case webURLString = "webUrl"
+        case apiURLString = "apiUrl"
         case isHosted
         case pillarID = "pillarId"
         case pillarName
