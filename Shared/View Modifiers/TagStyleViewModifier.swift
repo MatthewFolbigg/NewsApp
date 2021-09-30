@@ -11,12 +11,13 @@ struct tagStyleModifier: ViewModifier {
     
     var padding: CGFloat
     var radius: CGFloat
+    var color: Color
     
     func body(content: Content) -> some View {
         content
             .padding(.horizontal, padding * 1.5)
             .padding(.vertical, padding)
-            .foregroundColor(.secondary)
+            .foregroundColor(color)
             .background(
                 RoundedRectangle(cornerRadius: radius)
                     .foregroundStyle(.ultraThinMaterial)
@@ -26,7 +27,7 @@ struct tagStyleModifier: ViewModifier {
 }
 
 extension View {
-    func tagStyle(padding: CGFloat = 3, radius: CGFloat = 5) -> some View {
-        self.modifier(tagStyleModifier(padding: padding, radius: radius))
+    func tagStyle(padding: CGFloat = 3, radius: CGFloat = 5, color: Color = .secondary) -> some View {
+        self.modifier(tagStyleModifier(padding: padding, radius: radius, color: color))
     }
 }

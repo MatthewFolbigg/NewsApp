@@ -21,6 +21,8 @@ struct GuardianArticle: Codable, Identifiable {
     let pillarName: String
     let additional: Additional?
     var url: URL? { URL(string: self.webURLString) }
+    var styledHTML: GuardianArticleHTML { GuardianArticleHTML(bodyHtml: self.additional?.bodyHtml ?? "") }
+    
 
     enum CodingKeys: String, CodingKey {
         case id
