@@ -19,11 +19,13 @@ struct ArticleView: View {
             AsyncArticleImage(url: article.additional?.thumbnailURL ?? "")
                 .frame(minHeight: showImage ? 80: 0, maxHeight: showImage ? 400: 0)
                 .scaleEffect(showImage ? 1 : 0, anchor: .center)
+                .padding(.bottom, 10)
             VStack(alignment: .leading, spacing: 10) {
                 Text(article.title)
                     .font(.system(.title, design: .serif))
                 HStack {
                     ArticleTagBar(article: article)
+                    Spacer()
                     imageButton
                         .tagStyle(color: .blue)
                 }
