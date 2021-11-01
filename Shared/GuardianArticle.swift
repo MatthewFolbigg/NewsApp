@@ -17,11 +17,10 @@ struct GuardianArticle: Codable, Identifiable {
     let webURLString: String
     let apiURLString: String
     let isHosted: Bool
-    let pillarID: String
-    let pillarName: String
+    let pillarID: String?
+    let pillarName: String?
     let additional: Additional?
     var url: URL? { URL(string: self.webURLString) }
-    var styledHTML: GuardianArticleHTML { GuardianArticleHTML(bodyHtml: self.additional?.bodyHtml ?? "") }
     
 
     enum CodingKeys: String, CodingKey {

@@ -20,6 +20,8 @@ struct Detail: Codable {
     let results: [GuardianArticle]
 }
 
+
+//MARK: - Test Data
 extension GuardianArticle {
     static let testData = GuardianArticle(
         id: "technology/2021/sep/20/ios-15-release-everything-you-need-to-know-about-apples-big-update",

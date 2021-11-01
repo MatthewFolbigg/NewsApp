@@ -31,6 +31,8 @@ struct ArticleView: View {
                 }
                 Color.clear.frame(height: 1)
             }
+            //MARK: refactor gesture
+            .gesture(showImageGesture())
             .padding(.horizontal)
             
             Divider()
@@ -50,6 +52,23 @@ struct ArticleView: View {
                     showImage.toggle()
                 }
             }
+    }
+    
+    func showImageGesture() -> some Gesture {
+        DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                    .onEnded({ value in
+            if value.translation.height < 0 {
+                withAnimation {
+                    showImage = false
+                }
+            }
+            
+            if value.translation.height > 0 {
+                withAnimation {
+                    showImage = true
+                }
+            }
+        })
     }
     
 }
